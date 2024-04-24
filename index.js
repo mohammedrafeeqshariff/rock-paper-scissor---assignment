@@ -15,7 +15,7 @@ var computerScore = 0;
 var userScore = 0;
 
 var scoreElem = document.getElementById("game-score");
-var resultMessageElem = document.getElementById("game-result");
+var resultMessageElement = document.getElementById("game-result");
 var wonMessageElem = document.getElementById("game-won");
 var playAgainButton = document.getElementById("play-again");
 
@@ -69,22 +69,22 @@ function calculateScores() {
 }
 
 function displayResults() {
-    scoreElem.textContent = `${computerScore}-${userScore}`;
+    scoreElem.textContent = `${userScore}-${computerScore}`;
     if (userScore >= 5 || computerScore >= 5) {
         wonMessageElem.style.visibility = 'visible';
         rockButtonElem.disabled = true;
         paperButtonElem.disabled = true;
         scissorsButtonElem.disabled = true;
         if (userScore > computerScore) {
-            resultMessageElem.textContent = "You Won";
-            resultMessageElem.style.color = "white";
+            resultMessageElement.textContent = "You Won";
+            resultMessageElement.style.color = "white";
         } else {
-            resultMessageElem.textContent = "Computer Won";
-            resultMessageElem.style.color = "white";
+            resultMessageElement.textContent = "Computer Won";
+            resultMessageElement.style.color = "white";
         }
     } else {
-        resultMessageElem.textContent = "Continue playing...";
-        resultMessageElem.style.color = "white";
+        resultMessageElement.textContent = "Continue playing...";
+        resultMessageElement.style.color = "white";
     }
 }
 
