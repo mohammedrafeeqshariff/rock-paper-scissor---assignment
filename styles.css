@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game-play {
+    color: white;
+    background-color: rgb(90, 37, 192);
+    margin-left: 70%;
+    font-size: 35px;
+    height: 50px;
+    width: 120px;
+}
+
+#game-heading {
+    color: rgb(90, 37, 192);
+    font-size: 55px;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#player-move, #computer-move {
+    border: 2px solid yellow;
+    height: 50vh;
+    width: 25vw;
+}
+
+.pictures {
+    height: 40vh;
+    width: 25vw;
+}
+
+#game-image {
+    margin-left: 18%;
+    height: 400px;
+    width: 400px;
+}
+
+#game {
+    height: 30px;
+    width: 30px;
+}
+
+.images {
+   display: flex;
+   justify-content: space-between;
+}
+
+#vs {
+    height: 370px;
+}
+
+#game-score {
+    color: white;
+    margin-left: 44vw;
+    font-size: 5em;
+}
+
+#game-won {
+    margin-left: 45vw;
+    visibility: hidden;
+}
+
+#play-again {
+    padding: 2%;
+    width: 10vw;
+    border-radius: 25px;
+    background-color: rgb(136, 206, 238);
+}
+
+#game-result {
+    position: absolute;
+    font-size: larger;
+    bottom: 1px;
+}
